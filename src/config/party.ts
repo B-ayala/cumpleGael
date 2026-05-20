@@ -28,7 +28,7 @@ export const PARTY: PartyConfig = {
   age: 7,
   // 8 de junio de 2026, 13:00 hora local. ← editá hora si cambia.
   dateISO: "2026-06-08T13:00:00",
-  dateLabel: "Lunes 8 de junio de 2026",
+  dateLabel: "Domingo 7 de junio de 2026",
   timeLabel: "13:00 hs",
   // ↓↓↓ DATOS DE EJEMPLO — reemplazá por los reales ↓↓↓
   venueName: "Puerto rico 66 - Villa Celina",
