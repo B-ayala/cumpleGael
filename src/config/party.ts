@@ -33,7 +33,7 @@ export const PARTY: PartyConfig = {
   // ↓↓↓ DATOS DE EJEMPLO — reemplazá por los reales ↓↓↓
   venueName: "Puerto rico 66 - Villa Celina",
   venueAddress: "Av. del Gol 1010 — (villa futbolística)",
-  whatsappNumber: "1133631325",
+  whatsappNumber: "5491133631325",
 };
 
 /** Imágenes servidas desde /public/assets (rutas relativas para hosting estático). */
