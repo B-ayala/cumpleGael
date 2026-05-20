@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-night-900 font-body text-white antialiased;
+    overflow-x: hidden;
+    background-image:
+      radial-gradient(circle at 20% 0%, rgba(34, 211, 238, 0.18), transparent 45%),
+      radial-gradient(circle at 80% 10%, rgba(255, 46, 147, 0.16), transparent 45%),
+      radial-gradient(circle at 50% 100%, rgba(255, 210, 63, 0.12), transparent 55%);
+    background-attachment: fixed;
+  }
+
+  /* Respeta a quien prefiere menos movimiento (a11y). */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  :focus-visible {
+    outline: 3px solid theme("colors.gold.DEFAULT");
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+}
+
+@layer components {
+  .text-stroke {
+    -webkit-text-stroke: 2px rgba(0, 0, 0, 0.35);
+  }
+
+  /* Texto con relleno degradado dorado animado. */
+  .text-gradient-gold {
+    background: linear-gradient(100deg, #fff3c4, #ffd23f, #f5a623, #ffd23f, #fff3c4);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    @apply animate-shimmer;
+  }
+
+  .text-gradient-vs {
+    background: linear-gradient(100deg, #6fc3ff, #ffffff, #ff4d4d);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Líneas de cancha como textura de fondo. */
+  .pitch-lines {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+
+  .glass {
+    @apply border border-white/10 bg-white/5 backdrop-blur-md;
+  }
+}
