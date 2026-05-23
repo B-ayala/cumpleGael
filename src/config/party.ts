@@ -26,14 +26,13 @@ export interface PartyConfig {
 export const PARTY: PartyConfig = {
   childName: "Gaelito",
   age: 7,
-  // 8 de junio de 2026, 13:00 hora local. ← editá hora si cambia.
-  dateISO: "2026-06-08T13:00:00",
-  dateLabel: "Domingo 7 de junio de 2026",
-  timeLabel: "13:00 hs",
+  dateISO: "2026-06-06",
+  dateLabel: "Sabado 6 de junio de 2026",
+  timeLabel: "horario a coordinar",
   // ↓↓↓ DATOS DE EJEMPLO — reemplazá por los reales ↓↓↓
-  venueName: "Puerto rico 66 - Villa Celina",
+  venueName: "Casa de Mamá - La Ferrere",
   venueAddress: "Av. del Gol 1010 — (villa futbolística)",
-  whatsappNumber: "5491133631325",
+  whatsappNumber: "5491166548950",
 };
 
 /** Imágenes servidas desde /public/assets (rutas relativas para hosting estático). */

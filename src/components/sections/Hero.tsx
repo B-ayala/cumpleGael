@@ -54,6 +54,9 @@ export function Hero({ onConfirm }: HeroProps) {
         <motion.p variants={item} className="max-w-md text-base text-white/80 sm:text-xl">
           ¡{PARTY.childName} cumple {PARTY.age} y lo festejamos como una final de Champions! ⚽🏆
         </motion.p>
+        <motion.p variants={item} className="max-w-md text-base text-white/80 sm:text-xl">
+           A Gaelito le encanta la música de Daft Punk 🤖🎵 y es fanático de Lionel Messi Y Ronaldo⚽🏆
+        </motion.p>
 
         <motion.div variants={item} className="mt-8 flex flex-wrap items-center justify-center gap-4">
           <GlowButton variant="gold" huge onClick={onConfirm}>
